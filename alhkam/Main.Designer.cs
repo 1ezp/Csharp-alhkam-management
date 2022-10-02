@@ -63,7 +63,7 @@ namespace alhkam
             this.pn_topbar.Location = new System.Drawing.Point(0, 0);
             this.pn_topbar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pn_topbar.Name = "pn_topbar";
-            this.pn_topbar.Size = new System.Drawing.Size(1022, 57);
+            this.pn_topbar.Size = new System.Drawing.Size(1027, 57);
             this.pn_topbar.TabIndex = 0;
             this.pn_topbar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pn_topbar_MouseDown);
             // 
@@ -74,7 +74,7 @@ namespace alhkam
             this.lb_titlepage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lb_titlepage.Font = new System.Drawing.Font("LBC", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_titlepage.ForeColor = System.Drawing.SystemColors.Info;
-            this.lb_titlepage.Location = new System.Drawing.Point(475, 12);
+            this.lb_titlepage.Location = new System.Drawing.Point(477, 12);
             this.lb_titlepage.Name = "lb_titlepage";
             this.lb_titlepage.Size = new System.Drawing.Size(74, 28);
             this.lb_titlepage.TabIndex = 6;
@@ -123,10 +123,10 @@ namespace alhkam
             this.pn_navbar.Controls.Add(this.flowLayoutPanel1);
             this.pn_navbar.Controls.Add(this.pn_infonav);
             this.pn_navbar.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pn_navbar.Location = new System.Drawing.Point(1022, 0);
+            this.pn_navbar.Location = new System.Drawing.Point(1027, 0);
             this.pn_navbar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pn_navbar.Name = "pn_navbar";
-            this.pn_navbar.Size = new System.Drawing.Size(215, 562);
+            this.pn_navbar.Size = new System.Drawing.Size(210, 562);
             this.pn_navbar.TabIndex = 1;
             // 
             // flowLayoutPanel1
@@ -140,7 +140,7 @@ namespace alhkam
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 140);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(215, 422);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(210, 422);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
             // iconButton3
@@ -155,10 +155,11 @@ namespace alhkam
             this.iconButton3.IconColor = System.Drawing.Color.Orange;
             this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton3.IconSize = 35;
-            this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton3.Location = new System.Drawing.Point(4, 3);
             this.iconButton3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.iconButton3.Name = "iconButton3";
+            this.iconButton3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.iconButton3.Size = new System.Drawing.Size(207, 51);
             this.iconButton3.TabIndex = 6;
             this.iconButton3.Text = " الرئيسة";
@@ -177,10 +178,11 @@ namespace alhkam
             this.iconButton4.IconColor = System.Drawing.Color.Orange;
             this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton4.IconSize = 35;
-            this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton4.Location = new System.Drawing.Point(4, 60);
             this.iconButton4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.iconButton4.Name = "iconButton4";
+            this.iconButton4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.iconButton4.Size = new System.Drawing.Size(207, 51);
             this.iconButton4.TabIndex = 7;
             this.iconButton4.Text = "العملاء";
@@ -199,10 +201,11 @@ namespace alhkam
             this.iconButton5.IconColor = System.Drawing.Color.Orange;
             this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton5.IconSize = 35;
-            this.iconButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton5.Location = new System.Drawing.Point(4, 117);
             this.iconButton5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.iconButton5.Name = "iconButton5";
+            this.iconButton5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.iconButton5.Size = new System.Drawing.Size(207, 51);
             this.iconButton5.TabIndex = 8;
             this.iconButton5.Text = "الأصناف";
@@ -221,10 +224,11 @@ namespace alhkam
             this.iconButton6.IconColor = System.Drawing.Color.Orange;
             this.iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton6.IconSize = 35;
-            this.iconButton6.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton6.Location = new System.Drawing.Point(4, 174);
             this.iconButton6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.iconButton6.Name = "iconButton6";
+            this.iconButton6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.iconButton6.Size = new System.Drawing.Size(207, 51);
             this.iconButton6.TabIndex = 9;
             this.iconButton6.Text = "المبيعات";
@@ -243,10 +247,11 @@ namespace alhkam
             this.iconButton8.IconColor = System.Drawing.Color.Orange;
             this.iconButton8.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton8.IconSize = 35;
-            this.iconButton8.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton8.Location = new System.Drawing.Point(4, 231);
             this.iconButton8.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.iconButton8.Name = "iconButton8";
+            this.iconButton8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.iconButton8.Size = new System.Drawing.Size(207, 51);
             this.iconButton8.TabIndex = 11;
             this.iconButton8.Text = "المشتريات";
@@ -265,10 +270,11 @@ namespace alhkam
             this.iconButton7.IconColor = System.Drawing.Color.Orange;
             this.iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton7.IconSize = 35;
-            this.iconButton7.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.iconButton7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton7.Location = new System.Drawing.Point(4, 288);
             this.iconButton7.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.iconButton7.Name = "iconButton7";
+            this.iconButton7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.iconButton7.Size = new System.Drawing.Size(207, 51);
             this.iconButton7.TabIndex = 10;
             this.iconButton7.Text = "التقارير";
@@ -281,7 +287,7 @@ namespace alhkam
             this.pn_infonav.Dock = System.Windows.Forms.DockStyle.Top;
             this.pn_infonav.Location = new System.Drawing.Point(0, 0);
             this.pn_infonav.Name = "pn_infonav";
-            this.pn_infonav.Size = new System.Drawing.Size(215, 140);
+            this.pn_infonav.Size = new System.Drawing.Size(210, 140);
             this.pn_infonav.TabIndex = 0;
             // 
             // label2
@@ -291,7 +297,7 @@ namespace alhkam
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("LBC", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(7, 63);
+            this.label2.Location = new System.Drawing.Point(5, 63);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(202, 31);
             this.label2.TabIndex = 7;
@@ -306,7 +312,7 @@ namespace alhkam
             this.pn_cont.Location = new System.Drawing.Point(0, 0);
             this.pn_cont.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pn_cont.Name = "pn_cont";
-            this.pn_cont.Size = new System.Drawing.Size(1022, 562);
+            this.pn_cont.Size = new System.Drawing.Size(1027, 562);
             this.pn_cont.TabIndex = 2;
             this.pn_cont.Paint += new System.Windows.Forms.PaintEventHandler(this.pn_cont_Paint);
             // 

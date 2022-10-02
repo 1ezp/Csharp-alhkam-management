@@ -79,5 +79,7 @@ namespace alhkam
                 WindowState = FormWindowState.Normal;
             }
         }
+
+        
     }
 }
