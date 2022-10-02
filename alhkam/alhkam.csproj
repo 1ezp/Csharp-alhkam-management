@@ -59,6 +59,12 @@
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\FRM_Cat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_Cat.Designer.cs">
+      <DependentUpon>FRM_Cat.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\FRM_Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +75,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_Cat.resx">
+      <DependentUpon>FRM_Cat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\FRM_Home.resx">
       <DependentUpon>FRM_Home.cs</DependentUpon>
