@@ -30,26 +30,25 @@ namespace alhkam
         private void InitializeComponent()
         {
             this.pn_topbar = new System.Windows.Forms.Panel();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.lb_titlepage = new System.Windows.Forms.Label();
             this.btn_min = new FontAwesome.Sharp.IconButton();
             this.btn_close = new FontAwesome.Sharp.IconButton();
             this.pn_navbar = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
-            this.iconButton4 = new FontAwesome.Sharp.IconButton();
-            this.iconButton5 = new FontAwesome.Sharp.IconButton();
-            this.iconButton6 = new FontAwesome.Sharp.IconButton();
-            this.iconButton8 = new FontAwesome.Sharp.IconButton();
-            this.iconButton7 = new FontAwesome.Sharp.IconButton();
+            this.btn_home = new FontAwesome.Sharp.IconButton();
+            this.btn_agents = new FontAwesome.Sharp.IconButton();
+            this.btn_cat = new FontAwesome.Sharp.IconButton();
+            this.btn_sale = new FontAwesome.Sharp.IconButton();
+            this.btn_buy = new FontAwesome.Sharp.IconButton();
+            this.btn_reports = new FontAwesome.Sharp.IconButton();
             this.pn_infonav = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.pn_cont = new System.Windows.Forms.Panel();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.pn_topbar.SuspendLayout();
             this.pn_navbar.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.pn_infonav.SuspendLayout();
-            this.pn_cont.SuspendLayout();
             this.SuspendLayout();
             // 
             // pn_topbar
@@ -66,6 +65,25 @@ namespace alhkam
             this.pn_topbar.Size = new System.Drawing.Size(1027, 57);
             this.pn_topbar.TabIndex = 0;
             this.pn_topbar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pn_topbar_MouseDown);
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.FlatAppearance.BorderSize = 0;
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.Flip = FontAwesome.Sharp.FlipOrientation.Vertical;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.WindowMaximize;
+            this.iconButton1.IconColor = System.Drawing.Color.Orange;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.IconSize = 35;
+            this.iconButton1.Location = new System.Drawing.Point(52, 3);
+            this.iconButton1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(36, 37);
+            this.iconButton1.TabIndex = 7;
+            this.iconButton1.Text = " ";
+            this.iconButton1.UseMnemonic = false;
+            this.iconButton1.UseVisualStyleBackColor = true;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // lb_titlepage
             // 
@@ -86,7 +104,7 @@ namespace alhkam
             this.btn_min.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_min.Flip = FontAwesome.Sharp.FlipOrientation.Vertical;
             this.btn_min.IconChar = FontAwesome.Sharp.IconChar.Minus;
-            this.btn_min.IconColor = System.Drawing.Color.Black;
+            this.btn_min.IconColor = System.Drawing.Color.Orange;
             this.btn_min.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_min.IconSize = 35;
             this.btn_min.Location = new System.Drawing.Point(96, 12);
@@ -131,155 +149,158 @@ namespace alhkam
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.iconButton3);
-            this.flowLayoutPanel1.Controls.Add(this.iconButton4);
-            this.flowLayoutPanel1.Controls.Add(this.iconButton5);
-            this.flowLayoutPanel1.Controls.Add(this.iconButton6);
-            this.flowLayoutPanel1.Controls.Add(this.iconButton8);
-            this.flowLayoutPanel1.Controls.Add(this.iconButton7);
+            this.flowLayoutPanel1.Controls.Add(this.btn_home);
+            this.flowLayoutPanel1.Controls.Add(this.btn_agents);
+            this.flowLayoutPanel1.Controls.Add(this.btn_cat);
+            this.flowLayoutPanel1.Controls.Add(this.btn_sale);
+            this.flowLayoutPanel1.Controls.Add(this.btn_buy);
+            this.flowLayoutPanel1.Controls.Add(this.btn_reports);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 140);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(210, 422);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
-            // iconButton3
+            // btn_home
             // 
-            this.iconButton3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton3.FlatAppearance.BorderSize = 0;
-            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton3.Flip = FontAwesome.Sharp.FlipOrientation.Horizontal;
-            this.iconButton3.Font = new System.Drawing.Font("LBC", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton3.ForeColor = System.Drawing.Color.OldLace;
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.Home;
-            this.iconButton3.IconColor = System.Drawing.Color.Orange;
-            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.IconSize = 35;
-            this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton3.Location = new System.Drawing.Point(4, 3);
-            this.iconButton3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.iconButton3.Size = new System.Drawing.Size(207, 51);
-            this.iconButton3.TabIndex = 6;
-            this.iconButton3.Text = " الرئيسة";
-            this.iconButton3.UseMnemonic = false;
-            this.iconButton3.UseVisualStyleBackColor = true;
+            this.btn_home.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_home.FlatAppearance.BorderSize = 0;
+            this.btn_home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_home.Flip = FontAwesome.Sharp.FlipOrientation.Horizontal;
+            this.btn_home.Font = new System.Drawing.Font("LBC", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_home.ForeColor = System.Drawing.Color.OldLace;
+            this.btn_home.IconChar = FontAwesome.Sharp.IconChar.Home;
+            this.btn_home.IconColor = System.Drawing.Color.Orange;
+            this.btn_home.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn_home.IconSize = 35;
+            this.btn_home.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_home.Location = new System.Drawing.Point(4, 3);
+            this.btn_home.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btn_home.Name = "btn_home";
+            this.btn_home.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btn_home.Size = new System.Drawing.Size(207, 51);
+            this.btn_home.TabIndex = 6;
+            this.btn_home.Text = " الرئيسة";
+            this.btn_home.UseMnemonic = false;
+            this.btn_home.UseVisualStyleBackColor = true;
+            this.btn_home.Click += new System.EventHandler(this.btn_home_Click);
             // 
-            // iconButton4
+            // btn_agents
             // 
-            this.iconButton4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton4.FlatAppearance.BorderSize = 0;
-            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton4.Flip = FontAwesome.Sharp.FlipOrientation.Horizontal;
-            this.iconButton4.Font = new System.Drawing.Font("LBC", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton4.ForeColor = System.Drawing.Color.OldLace;
-            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.Users;
-            this.iconButton4.IconColor = System.Drawing.Color.Orange;
-            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton4.IconSize = 35;
-            this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton4.Location = new System.Drawing.Point(4, 60);
-            this.iconButton4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.iconButton4.Name = "iconButton4";
-            this.iconButton4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.iconButton4.Size = new System.Drawing.Size(207, 51);
-            this.iconButton4.TabIndex = 7;
-            this.iconButton4.Text = "العملاء";
-            this.iconButton4.UseMnemonic = false;
-            this.iconButton4.UseVisualStyleBackColor = true;
+            this.btn_agents.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_agents.FlatAppearance.BorderSize = 0;
+            this.btn_agents.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_agents.Flip = FontAwesome.Sharp.FlipOrientation.Horizontal;
+            this.btn_agents.Font = new System.Drawing.Font("LBC", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_agents.ForeColor = System.Drawing.Color.OldLace;
+            this.btn_agents.IconChar = FontAwesome.Sharp.IconChar.Users;
+            this.btn_agents.IconColor = System.Drawing.Color.Orange;
+            this.btn_agents.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn_agents.IconSize = 35;
+            this.btn_agents.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_agents.Location = new System.Drawing.Point(4, 60);
+            this.btn_agents.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btn_agents.Name = "btn_agents";
+            this.btn_agents.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btn_agents.Size = new System.Drawing.Size(207, 51);
+            this.btn_agents.TabIndex = 7;
+            this.btn_agents.Text = "العملاء";
+            this.btn_agents.UseMnemonic = false;
+            this.btn_agents.UseVisualStyleBackColor = true;
+            this.btn_agents.Click += new System.EventHandler(this.btn_agents_Click);
             // 
-            // iconButton5
+            // btn_cat
             // 
-            this.iconButton5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton5.FlatAppearance.BorderSize = 0;
-            this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton5.Flip = FontAwesome.Sharp.FlipOrientation.Horizontal;
-            this.iconButton5.Font = new System.Drawing.Font("LBC", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton5.ForeColor = System.Drawing.Color.OldLace;
-            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.ListDots;
-            this.iconButton5.IconColor = System.Drawing.Color.Orange;
-            this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton5.IconSize = 35;
-            this.iconButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton5.Location = new System.Drawing.Point(4, 117);
-            this.iconButton5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.iconButton5.Name = "iconButton5";
-            this.iconButton5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.iconButton5.Size = new System.Drawing.Size(207, 51);
-            this.iconButton5.TabIndex = 8;
-            this.iconButton5.Text = "الأصناف";
-            this.iconButton5.UseMnemonic = false;
-            this.iconButton5.UseVisualStyleBackColor = true;
+            this.btn_cat.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_cat.FlatAppearance.BorderSize = 0;
+            this.btn_cat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cat.Flip = FontAwesome.Sharp.FlipOrientation.Horizontal;
+            this.btn_cat.Font = new System.Drawing.Font("LBC", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cat.ForeColor = System.Drawing.Color.OldLace;
+            this.btn_cat.IconChar = FontAwesome.Sharp.IconChar.ListDots;
+            this.btn_cat.IconColor = System.Drawing.Color.Orange;
+            this.btn_cat.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn_cat.IconSize = 35;
+            this.btn_cat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_cat.Location = new System.Drawing.Point(4, 117);
+            this.btn_cat.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btn_cat.Name = "btn_cat";
+            this.btn_cat.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btn_cat.Size = new System.Drawing.Size(207, 51);
+            this.btn_cat.TabIndex = 8;
+            this.btn_cat.Text = "الأصناف";
+            this.btn_cat.UseMnemonic = false;
+            this.btn_cat.UseVisualStyleBackColor = true;
+            this.btn_cat.Click += new System.EventHandler(this.btn_cat_Click);
             // 
-            // iconButton6
+            // btn_sale
             // 
-            this.iconButton6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton6.FlatAppearance.BorderSize = 0;
-            this.iconButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton6.Flip = FontAwesome.Sharp.FlipOrientation.Horizontal;
-            this.iconButton6.Font = new System.Drawing.Font("LBC", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton6.ForeColor = System.Drawing.Color.OldLace;
-            this.iconButton6.IconChar = FontAwesome.Sharp.IconChar.ChartSimple;
-            this.iconButton6.IconColor = System.Drawing.Color.Orange;
-            this.iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton6.IconSize = 35;
-            this.iconButton6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton6.Location = new System.Drawing.Point(4, 174);
-            this.iconButton6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.iconButton6.Name = "iconButton6";
-            this.iconButton6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.iconButton6.Size = new System.Drawing.Size(207, 51);
-            this.iconButton6.TabIndex = 9;
-            this.iconButton6.Text = "المبيعات";
-            this.iconButton6.UseMnemonic = false;
-            this.iconButton6.UseVisualStyleBackColor = true;
+            this.btn_sale.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_sale.FlatAppearance.BorderSize = 0;
+            this.btn_sale.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_sale.Flip = FontAwesome.Sharp.FlipOrientation.Horizontal;
+            this.btn_sale.Font = new System.Drawing.Font("LBC", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_sale.ForeColor = System.Drawing.Color.OldLace;
+            this.btn_sale.IconChar = FontAwesome.Sharp.IconChar.ChartSimple;
+            this.btn_sale.IconColor = System.Drawing.Color.Orange;
+            this.btn_sale.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn_sale.IconSize = 35;
+            this.btn_sale.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_sale.Location = new System.Drawing.Point(4, 174);
+            this.btn_sale.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btn_sale.Name = "btn_sale";
+            this.btn_sale.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btn_sale.Size = new System.Drawing.Size(207, 51);
+            this.btn_sale.TabIndex = 9;
+            this.btn_sale.Text = "المبيعات";
+            this.btn_sale.UseMnemonic = false;
+            this.btn_sale.UseVisualStyleBackColor = true;
             // 
-            // iconButton8
+            // btn_buy
             // 
-            this.iconButton8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton8.FlatAppearance.BorderSize = 0;
-            this.iconButton8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton8.Flip = FontAwesome.Sharp.FlipOrientation.Horizontal;
-            this.iconButton8.Font = new System.Drawing.Font("LBC", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton8.ForeColor = System.Drawing.Color.OldLace;
-            this.iconButton8.IconChar = FontAwesome.Sharp.IconChar.ShoppingCart;
-            this.iconButton8.IconColor = System.Drawing.Color.Orange;
-            this.iconButton8.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton8.IconSize = 35;
-            this.iconButton8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton8.Location = new System.Drawing.Point(4, 231);
-            this.iconButton8.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.iconButton8.Name = "iconButton8";
-            this.iconButton8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.iconButton8.Size = new System.Drawing.Size(207, 51);
-            this.iconButton8.TabIndex = 11;
-            this.iconButton8.Text = "المشتريات";
-            this.iconButton8.UseMnemonic = false;
-            this.iconButton8.UseVisualStyleBackColor = true;
+            this.btn_buy.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_buy.FlatAppearance.BorderSize = 0;
+            this.btn_buy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_buy.Flip = FontAwesome.Sharp.FlipOrientation.Horizontal;
+            this.btn_buy.Font = new System.Drawing.Font("LBC", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_buy.ForeColor = System.Drawing.Color.OldLace;
+            this.btn_buy.IconChar = FontAwesome.Sharp.IconChar.ShoppingCart;
+            this.btn_buy.IconColor = System.Drawing.Color.Orange;
+            this.btn_buy.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn_buy.IconSize = 35;
+            this.btn_buy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_buy.Location = new System.Drawing.Point(4, 231);
+            this.btn_buy.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btn_buy.Name = "btn_buy";
+            this.btn_buy.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btn_buy.Size = new System.Drawing.Size(207, 51);
+            this.btn_buy.TabIndex = 11;
+            this.btn_buy.Text = "المشتريات";
+            this.btn_buy.UseMnemonic = false;
+            this.btn_buy.UseVisualStyleBackColor = true;
             // 
-            // iconButton7
+            // btn_reports
             // 
-            this.iconButton7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton7.FlatAppearance.BorderSize = 0;
-            this.iconButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton7.Flip = FontAwesome.Sharp.FlipOrientation.Horizontal;
-            this.iconButton7.Font = new System.Drawing.Font("LBC", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton7.ForeColor = System.Drawing.Color.OldLace;
-            this.iconButton7.IconChar = FontAwesome.Sharp.IconChar.FileAlt;
-            this.iconButton7.IconColor = System.Drawing.Color.Orange;
-            this.iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton7.IconSize = 35;
-            this.iconButton7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton7.Location = new System.Drawing.Point(4, 288);
-            this.iconButton7.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.iconButton7.Name = "iconButton7";
-            this.iconButton7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.iconButton7.Size = new System.Drawing.Size(207, 51);
-            this.iconButton7.TabIndex = 10;
-            this.iconButton7.Text = "التقارير";
-            this.iconButton7.UseMnemonic = false;
-            this.iconButton7.UseVisualStyleBackColor = true;
+            this.btn_reports.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_reports.FlatAppearance.BorderSize = 0;
+            this.btn_reports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_reports.Flip = FontAwesome.Sharp.FlipOrientation.Horizontal;
+            this.btn_reports.Font = new System.Drawing.Font("LBC", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_reports.ForeColor = System.Drawing.Color.OldLace;
+            this.btn_reports.IconChar = FontAwesome.Sharp.IconChar.FileAlt;
+            this.btn_reports.IconColor = System.Drawing.Color.Orange;
+            this.btn_reports.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn_reports.IconSize = 35;
+            this.btn_reports.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_reports.Location = new System.Drawing.Point(4, 288);
+            this.btn_reports.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btn_reports.Name = "btn_reports";
+            this.btn_reports.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btn_reports.Size = new System.Drawing.Size(207, 51);
+            this.btn_reports.TabIndex = 10;
+            this.btn_reports.Text = "التقارير";
+            this.btn_reports.UseMnemonic = false;
+            this.btn_reports.UseVisualStyleBackColor = true;
             // 
             // pn_infonav
             // 
@@ -307,33 +328,13 @@ namespace alhkam
             // pn_cont
             // 
             this.pn_cont.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.pn_cont.Controls.Add(this.pn_topbar);
             this.pn_cont.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pn_cont.Location = new System.Drawing.Point(0, 0);
+            this.pn_cont.Location = new System.Drawing.Point(0, 57);
             this.pn_cont.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pn_cont.Name = "pn_cont";
-            this.pn_cont.Size = new System.Drawing.Size(1027, 562);
+            this.pn_cont.Size = new System.Drawing.Size(1027, 505);
             this.pn_cont.TabIndex = 2;
             this.pn_cont.Paint += new System.Windows.Forms.PaintEventHandler(this.pn_cont_Paint);
-            // 
-            // iconButton1
-            // 
-            this.iconButton1.FlatAppearance.BorderSize = 0;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.Flip = FontAwesome.Sharp.FlipOrientation.Vertical;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.WindowMaximize;
-            this.iconButton1.IconColor = System.Drawing.Color.Black;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 35;
-            this.iconButton1.Location = new System.Drawing.Point(52, 3);
-            this.iconButton1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(36, 37);
-            this.iconButton1.TabIndex = 7;
-            this.iconButton1.Text = " ";
-            this.iconButton1.UseMnemonic = false;
-            this.iconButton1.UseVisualStyleBackColor = true;
-            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // Main
             // 
@@ -341,6 +342,7 @@ namespace alhkam
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1237, 562);
             this.Controls.Add(this.pn_cont);
+            this.Controls.Add(this.pn_topbar);
             this.Controls.Add(this.pn_navbar);
             this.Font = new System.Drawing.Font("LBC", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -355,7 +357,6 @@ namespace alhkam
             this.flowLayoutPanel1.ResumeLayout(false);
             this.pn_infonav.ResumeLayout(false);
             this.pn_infonav.PerformLayout();
-            this.pn_cont.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -371,12 +372,12 @@ namespace alhkam
         private System.Windows.Forms.Panel pn_infonav;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private FontAwesome.Sharp.IconButton iconButton3;
-        private FontAwesome.Sharp.IconButton iconButton4;
-        private FontAwesome.Sharp.IconButton iconButton5;
-        private FontAwesome.Sharp.IconButton iconButton6;
-        private FontAwesome.Sharp.IconButton iconButton7;
-        private FontAwesome.Sharp.IconButton iconButton8;
+        private FontAwesome.Sharp.IconButton btn_home;
+        private FontAwesome.Sharp.IconButton btn_agents;
+        private FontAwesome.Sharp.IconButton btn_cat;
+        private FontAwesome.Sharp.IconButton btn_sale;
+        private FontAwesome.Sharp.IconButton btn_reports;
+        private FontAwesome.Sharp.IconButton btn_buy;
         private FontAwesome.Sharp.IconButton iconButton1;
     }
 }

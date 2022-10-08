@@ -19,6 +19,12 @@ namespace alhkam
         [DllImport("user32.dll", EntryPoint = "SendMessage")]
         private extern static void SendMessge(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
 
+        MPMContainer db = new MPMContainer();
+        public PL.FRM_Cat frm_cat = new PL.FRM_Cat();
+        PL.FRM_Home frm_home = new PL.FRM_Home();
+
+
+
         public Main()
         {
             InitializeComponent();
@@ -27,6 +33,8 @@ namespace alhkam
         private void Main_Load(object sender, EventArgs e)
             
         {
+            pn_cont.Controls.Clear();
+            pn_cont.Controls.Add(frm_home.pn_home);
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -80,6 +88,24 @@ namespace alhkam
             }
         }
 
-        
+        private void btn_home_Click(object sender, EventArgs e)
+        {
+            pn_cont.Controls.Clear();
+            lb_titlepage.Text = "الرئيسة";
+            pn_cont.Controls.Add(frm_home.pn_home);
+        }
+
+        private void btn_agents_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btn_cat_Click(object sender, EventArgs e)
+        {
+            pn_cont.Controls.Clear();
+            lb_titlepage.Text = "الاصناف";
+            frm_cat.dataGridViewCat.DataSource = db.TB_CAT.ToList();
+            pn_cont.Controls.Add(frm_cat.pn_cat);
+        }
     }
 }

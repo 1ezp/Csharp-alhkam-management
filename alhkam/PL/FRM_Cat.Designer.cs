@@ -29,162 +29,258 @@ namespace alhkam.PL
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pn_cat = new System.Windows.Forms.Panel();
-            this.iconButton4 = new FontAwesome.Sharp.IconButton();
+            this.dataGridViewCat = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.iconButton5 = new FontAwesome.Sharp.IconButton();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.edt_search = new System.Windows.Forms.TextBox();
+            this.btn_search = new FontAwesome.Sharp.IconButton();
+            this.btn_upadte = new FontAwesome.Sharp.IconButton();
+            this.btn_delete = new FontAwesome.Sharp.IconButton();
+            this.btn_edit = new FontAwesome.Sharp.IconButton();
+            this.btn_add = new FontAwesome.Sharp.IconButton();
+            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cATNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tBCATBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pn_cat.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCat)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tBCATBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // pn_cat
             // 
+            this.pn_cat.Controls.Add(this.dataGridViewCat);
             this.pn_cat.Controls.Add(this.panel2);
-            this.pn_cat.Controls.Add(this.dataGridView1);
             this.pn_cat.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pn_cat.Location = new System.Drawing.Point(0, 0);
             this.pn_cat.Name = "pn_cat";
-            this.pn_cat.Size = new System.Drawing.Size(1027, 562);
+            this.pn_cat.Size = new System.Drawing.Size(1027, 506);
             this.pn_cat.TabIndex = 0;
             // 
-            // iconButton4
+            // dataGridViewCat
             // 
-            this.iconButton4.FlatAppearance.BorderColor = System.Drawing.Color.Orange;
-            this.iconButton4.FlatAppearance.BorderSize = 2;
-            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton4.Font = new System.Drawing.Font("LBC", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton4.ForeColor = System.Drawing.SystemColors.Info;
-            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton4.IconColor = System.Drawing.Color.Black;
-            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton4.Location = new System.Drawing.Point(494, 25);
-            this.iconButton4.Name = "iconButton4";
-            this.iconButton4.Size = new System.Drawing.Size(153, 48);
-            this.iconButton4.TabIndex = 0;
-            this.iconButton4.Text = "تحديث";
-            this.iconButton4.UseVisualStyleBackColor = true;
+            this.dataGridViewCat.AllowUserToAddRows = false;
+            this.dataGridViewCat.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Orange;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridViewCat.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewCat.AutoGenerateColumns = false;
+            this.dataGridViewCat.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewCat.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.dataGridViewCat.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridViewCat.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
+            this.dataGridViewCat.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("LBC", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Orange;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewCat.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridViewCat.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewCat.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.iDDataGridViewTextBoxColumn,
+            this.cATNameDataGridViewTextBoxColumn});
+            this.dataGridViewCat.DataSource = this.tBCATBindingSource;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 8F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Orange;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewCat.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridViewCat.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewCat.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.dataGridViewCat.Location = new System.Drawing.Point(0, 0);
+            this.dataGridViewCat.Name = "dataGridViewCat";
+            this.dataGridViewCat.ReadOnly = true;
+            this.dataGridViewCat.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.dataGridViewCat.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Tahoma", 8F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Orange;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewCat.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridViewCat.RowHeadersWidth = 100;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Orange;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridViewCat.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.dataGridViewCat.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.dataGridViewCat.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("LBC", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewCat.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.White;
+            this.dataGridViewCat.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.Orange;
+            this.dataGridViewCat.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridViewCat.RowTemplate.Height = 30;
+            this.dataGridViewCat.Size = new System.Drawing.Size(1027, 414);
+            this.dataGridViewCat.TabIndex = 3;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Controls.Add(this.iconButton5);
-            this.panel2.Controls.Add(this.iconButton4);
-            this.panel2.Controls.Add(this.iconButton3);
-            this.panel2.Controls.Add(this.iconButton2);
-            this.panel2.Controls.Add(this.iconButton1);
+            this.panel2.Controls.Add(this.edt_search);
+            this.panel2.Controls.Add(this.btn_search);
+            this.panel2.Controls.Add(this.btn_upadte);
+            this.panel2.Controls.Add(this.btn_delete);
+            this.panel2.Controls.Add(this.btn_edit);
+            this.panel2.Controls.Add(this.btn_add);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 470);
+            this.panel2.Location = new System.Drawing.Point(0, 414);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1027, 92);
             this.panel2.TabIndex = 2;
             // 
-            // textBox1
+            // edt_search
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("LBC", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(665, 31);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(294, 35);
-            this.textBox1.TabIndex = 1;
+            this.edt_search.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.edt_search.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.edt_search.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.edt_search.Font = new System.Drawing.Font("LBC", 19F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.edt_search.ForeColor = System.Drawing.Color.White;
+            this.edt_search.Location = new System.Drawing.Point(665, 31);
+            this.edt_search.Name = "edt_search";
+            this.edt_search.Size = new System.Drawing.Size(294, 33);
+            this.edt_search.TabIndex = 1;
+            this.edt_search.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // iconButton5
+            // btn_search
             // 
-            this.iconButton5.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.iconButton5.FlatAppearance.BorderSize = 0;
-            this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton5.Font = new System.Drawing.Font("LBC", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton5.ForeColor = System.Drawing.SystemColors.Info;
-            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.Search;
-            this.iconButton5.IconColor = System.Drawing.Color.Orange;
-            this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton5.Location = new System.Drawing.Point(966, 22);
-            this.iconButton5.Name = "iconButton5";
-            this.iconButton5.Size = new System.Drawing.Size(49, 48);
-            this.iconButton5.TabIndex = 0;
-            this.iconButton5.UseVisualStyleBackColor = true;
+            this.btn_search.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_search.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btn_search.FlatAppearance.BorderSize = 0;
+            this.btn_search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_search.Font = new System.Drawing.Font("LBC", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_search.ForeColor = System.Drawing.SystemColors.Info;
+            this.btn_search.IconChar = FontAwesome.Sharp.IconChar.Search;
+            this.btn_search.IconColor = System.Drawing.Color.Orange;
+            this.btn_search.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn_search.Location = new System.Drawing.Point(966, 22);
+            this.btn_search.Name = "btn_search";
+            this.btn_search.Size = new System.Drawing.Size(49, 48);
+            this.btn_search.TabIndex = 0;
+            this.btn_search.UseVisualStyleBackColor = true;
+            this.btn_search.Click += new System.EventHandler(this.btn_search_Click);
             // 
-            // iconButton3
+            // btn_upadte
             // 
-            this.iconButton3.FlatAppearance.BorderColor = System.Drawing.Color.Orange;
-            this.iconButton3.FlatAppearance.BorderSize = 2;
-            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton3.Font = new System.Drawing.Font("LBC", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton3.ForeColor = System.Drawing.SystemColors.Info;
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton3.IconColor = System.Drawing.Color.Black;
-            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.Location = new System.Drawing.Point(334, 25);
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Size = new System.Drawing.Size(153, 48);
-            this.iconButton3.TabIndex = 0;
-            this.iconButton3.Text = "حذف";
-            this.iconButton3.UseVisualStyleBackColor = true;
+            this.btn_upadte.FlatAppearance.BorderColor = System.Drawing.Color.Orange;
+            this.btn_upadte.FlatAppearance.BorderSize = 2;
+            this.btn_upadte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_upadte.Font = new System.Drawing.Font("LBC", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_upadte.ForeColor = System.Drawing.SystemColors.Info;
+            this.btn_upadte.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btn_upadte.IconColor = System.Drawing.Color.Black;
+            this.btn_upadte.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn_upadte.Location = new System.Drawing.Point(494, 25);
+            this.btn_upadte.Name = "btn_upadte";
+            this.btn_upadte.Size = new System.Drawing.Size(153, 48);
+            this.btn_upadte.TabIndex = 0;
+            this.btn_upadte.Text = "تحديث";
+            this.btn_upadte.UseVisualStyleBackColor = true;
+            this.btn_upadte.Click += new System.EventHandler(this.btn_upadte_Click);
             // 
-            // iconButton2
+            // btn_delete
             // 
-            this.iconButton2.FlatAppearance.BorderColor = System.Drawing.Color.Orange;
-            this.iconButton2.FlatAppearance.BorderSize = 2;
-            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.Font = new System.Drawing.Font("LBC", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton2.ForeColor = System.Drawing.SystemColors.Info;
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton2.IconColor = System.Drawing.Color.Black;
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.Location = new System.Drawing.Point(174, 25);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(153, 48);
-            this.iconButton2.TabIndex = 0;
-            this.iconButton2.Text = "تعديل";
-            this.iconButton2.UseVisualStyleBackColor = true;
+            this.btn_delete.FlatAppearance.BorderColor = System.Drawing.Color.Orange;
+            this.btn_delete.FlatAppearance.BorderSize = 2;
+            this.btn_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_delete.Font = new System.Drawing.Font("LBC", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_delete.ForeColor = System.Drawing.SystemColors.Info;
+            this.btn_delete.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btn_delete.IconColor = System.Drawing.Color.Black;
+            this.btn_delete.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn_delete.Location = new System.Drawing.Point(334, 25);
+            this.btn_delete.Name = "btn_delete";
+            this.btn_delete.Size = new System.Drawing.Size(153, 48);
+            this.btn_delete.TabIndex = 0;
+            this.btn_delete.Text = "حذف";
+            this.btn_delete.UseVisualStyleBackColor = true;
+            this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
             // 
-            // iconButton1
+            // btn_edit
             // 
-            this.iconButton1.FlatAppearance.BorderColor = System.Drawing.Color.Orange;
-            this.iconButton1.FlatAppearance.BorderSize = 2;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.Font = new System.Drawing.Font("LBC", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton1.ForeColor = System.Drawing.SystemColors.Info;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton1.IconColor = System.Drawing.Color.Black;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.Location = new System.Drawing.Point(14, 25);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(153, 48);
-            this.iconButton1.TabIndex = 0;
-            this.iconButton1.Text = "إضافة";
-            this.iconButton1.UseVisualStyleBackColor = true;
+            this.btn_edit.FlatAppearance.BorderColor = System.Drawing.Color.Orange;
+            this.btn_edit.FlatAppearance.BorderSize = 2;
+            this.btn_edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_edit.Font = new System.Drawing.Font("LBC", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_edit.ForeColor = System.Drawing.SystemColors.Info;
+            this.btn_edit.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btn_edit.IconColor = System.Drawing.Color.Black;
+            this.btn_edit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn_edit.Location = new System.Drawing.Point(174, 25);
+            this.btn_edit.Name = "btn_edit";
+            this.btn_edit.Size = new System.Drawing.Size(153, 48);
+            this.btn_edit.TabIndex = 0;
+            this.btn_edit.Text = "تعديل";
+            this.btn_edit.UseVisualStyleBackColor = true;
+            this.btn_edit.Click += new System.EventHandler(this.btn_edit_Click);
             // 
-            // dataGridView1
+            // btn_add
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1027, 562);
-            this.dataGridView1.TabIndex = 3;
+            this.btn_add.FlatAppearance.BorderColor = System.Drawing.Color.Orange;
+            this.btn_add.FlatAppearance.BorderSize = 2;
+            this.btn_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_add.Font = new System.Drawing.Font("LBC", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_add.ForeColor = System.Drawing.SystemColors.Info;
+            this.btn_add.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btn_add.IconColor = System.Drawing.Color.Black;
+            this.btn_add.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn_add.Location = new System.Drawing.Point(14, 25);
+            this.btn_add.Name = "btn_add";
+            this.btn_add.Size = new System.Drawing.Size(153, 48);
+            this.btn_add.TabIndex = 0;
+            this.btn_add.Text = "إضافة";
+            this.btn_add.UseVisualStyleBackColor = true;
+            this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
+            // 
+            // iDDataGridViewTextBoxColumn
+            // 
+            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn.HeaderText = "رقم الصنف";
+            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
+            this.iDDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // cATNameDataGridViewTextBoxColumn
+            // 
+            this.cATNameDataGridViewTextBoxColumn.DataPropertyName = "CAT_Name";
+            this.cATNameDataGridViewTextBoxColumn.HeaderText = "اسم الصنف";
+            this.cATNameDataGridViewTextBoxColumn.Name = "cATNameDataGridViewTextBoxColumn";
+            this.cATNameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // tBCATBindingSource
+            // 
+            this.tBCATBindingSource.DataSource = typeof(alhkam.TB_CAT);
             // 
             // FRM_Cat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.ClientSize = new System.Drawing.Size(1027, 562);
+            this.ClientSize = new System.Drawing.Size(1027, 506);
             this.Controls.Add(this.pn_cat);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FRM_Cat";
             this.Text = "FRM_Cat";
+            this.Load += new System.EventHandler(this.FRM_Cat_Load);
             this.pn_cat.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCat)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tBCATBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -193,12 +289,15 @@ namespace alhkam.PL
 
         public System.Windows.Forms.Panel pn_cat;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox1;
-        private FontAwesome.Sharp.IconButton iconButton5;
-        private FontAwesome.Sharp.IconButton iconButton4;
-        private FontAwesome.Sharp.IconButton iconButton3;
-        private FontAwesome.Sharp.IconButton iconButton2;
-        private FontAwesome.Sharp.IconButton iconButton1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox edt_search;
+        private FontAwesome.Sharp.IconButton btn_search;
+        private FontAwesome.Sharp.IconButton btn_upadte;
+        private FontAwesome.Sharp.IconButton btn_delete;
+        private FontAwesome.Sharp.IconButton btn_edit;
+        private FontAwesome.Sharp.IconButton btn_add;
+        private System.Windows.Forms.BindingSource tBCATBindingSource;
+        public System.Windows.Forms.DataGridView dataGridViewCat;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cATNameDataGridViewTextBoxColumn;
     }
 }

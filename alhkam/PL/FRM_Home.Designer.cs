@@ -33,22 +33,27 @@ namespace alhkam.PL
             this.panel11 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.iconPictureBox5 = new FontAwesome.Sharp.IconPictureBox();
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.iconPictureBox4 = new FontAwesome.Sharp.IconPictureBox();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.lb_titlepage = new System.Windows.Forms.Label();
+            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.iconButton11 = new FontAwesome.Sharp.IconButton();
@@ -57,24 +62,19 @@ namespace alhkam.PL
             this.iconButton8 = new FontAwesome.Sharp.IconButton();
             this.iconButton7 = new FontAwesome.Sharp.IconButton();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.iconPictureBox5 = new FontAwesome.Sharp.IconPictureBox();
-            this.iconPictureBox4 = new FontAwesome.Sharp.IconPictureBox();
-            this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
-            this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
-            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.pn_home = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel11.SuspendLayout();
-            this.panel9.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).BeginInit();
+            this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).BeginInit();
+            this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
+            this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.pn_home.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -88,19 +88,20 @@ namespace alhkam.PL
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1027, 467);
+            this.panel1.Size = new System.Drawing.Size(1027, 414);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel11
             // 
+            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             this.panel11.Controls.Add(this.label8);
             this.panel11.Controls.Add(this.label9);
             this.panel11.Controls.Add(this.iconPictureBox5);
             this.panel11.Controls.Add(this.panel12);
-            this.panel11.Location = new System.Drawing.Point(546, 246);
+            this.panel11.Location = new System.Drawing.Point(522, 203);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(221, 197);
+            this.panel11.Size = new System.Drawing.Size(221, 183);
             this.panel11.TabIndex = 9;
             // 
             // label8
@@ -123,11 +124,27 @@ namespace alhkam.PL
             this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label9.Font = new System.Drawing.Font("LBC", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.Info;
-            this.label9.Location = new System.Drawing.Point(46, 147);
+            this.label9.Location = new System.Drawing.Point(40, 138);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(137, 30);
             this.label9.TabIndex = 7;
             this.label9.Text = "معاملات شراء";
+            // 
+            // iconPictureBox5
+            // 
+            this.iconPictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.iconPictureBox5.Flip = FontAwesome.Sharp.FlipOrientation.Horizontal;
+            this.iconPictureBox5.ForeColor = System.Drawing.Color.Orange;
+            this.iconPictureBox5.IconChar = FontAwesome.Sharp.IconChar.CartPlus;
+            this.iconPictureBox5.IconColor = System.Drawing.Color.Orange;
+            this.iconPictureBox5.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox5.IconSize = 84;
+            this.iconPictureBox5.Location = new System.Drawing.Point(116, 16);
+            this.iconPictureBox5.Name = "iconPictureBox5";
+            this.iconPictureBox5.Size = new System.Drawing.Size(93, 84);
+            this.iconPictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.iconPictureBox5.TabIndex = 1;
+            this.iconPictureBox5.TabStop = false;
             // 
             // panel12
             // 
@@ -140,13 +157,14 @@ namespace alhkam.PL
             // 
             // panel9
             // 
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             this.panel9.Controls.Add(this.label6);
             this.panel9.Controls.Add(this.label7);
             this.panel9.Controls.Add(this.iconPictureBox4);
             this.panel9.Controls.Add(this.panel10);
-            this.panel9.Location = new System.Drawing.Point(210, 246);
+            this.panel9.Location = new System.Drawing.Point(203, 203);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(221, 197);
+            this.panel9.Size = new System.Drawing.Size(221, 183);
             this.panel9.TabIndex = 10;
             // 
             // label6
@@ -169,11 +187,27 @@ namespace alhkam.PL
             this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label7.Font = new System.Drawing.Font("LBC", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.Info;
-            this.label7.Location = new System.Drawing.Point(58, 147);
+            this.label7.Location = new System.Drawing.Point(58, 138);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(73, 30);
             this.label7.TabIndex = 7;
             this.label7.Text = "التقارير";
+            // 
+            // iconPictureBox4
+            // 
+            this.iconPictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.iconPictureBox4.Flip = FontAwesome.Sharp.FlipOrientation.Horizontal;
+            this.iconPictureBox4.ForeColor = System.Drawing.Color.Orange;
+            this.iconPictureBox4.IconChar = FontAwesome.Sharp.IconChar.File;
+            this.iconPictureBox4.IconColor = System.Drawing.Color.Orange;
+            this.iconPictureBox4.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox4.IconSize = 84;
+            this.iconPictureBox4.Location = new System.Drawing.Point(116, 16);
+            this.iconPictureBox4.Name = "iconPictureBox4";
+            this.iconPictureBox4.Size = new System.Drawing.Size(93, 84);
+            this.iconPictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.iconPictureBox4.TabIndex = 1;
+            this.iconPictureBox4.TabStop = false;
             // 
             // panel10
             // 
@@ -186,13 +220,14 @@ namespace alhkam.PL
             // 
             // panel7
             // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             this.panel7.Controls.Add(this.label4);
             this.panel7.Controls.Add(this.label5);
             this.panel7.Controls.Add(this.iconPictureBox3);
             this.panel7.Controls.Add(this.panel8);
-            this.panel7.Location = new System.Drawing.Point(719, 30);
+            this.panel7.Location = new System.Drawing.Point(740, 14);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(221, 197);
+            this.panel7.Size = new System.Drawing.Size(221, 178);
             this.panel7.TabIndex = 9;
             // 
             // label4
@@ -215,11 +250,27 @@ namespace alhkam.PL
             this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label5.Font = new System.Drawing.Font("LBC", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.Info;
-            this.label5.Location = new System.Drawing.Point(55, 147);
+            this.label5.Location = new System.Drawing.Point(55, 135);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(125, 30);
             this.label5.TabIndex = 7;
             this.label5.Text = "معاملات بيع";
+            // 
+            // iconPictureBox3
+            // 
+            this.iconPictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.iconPictureBox3.Flip = FontAwesome.Sharp.FlipOrientation.Horizontal;
+            this.iconPictureBox3.ForeColor = System.Drawing.Color.Orange;
+            this.iconPictureBox3.IconChar = FontAwesome.Sharp.IconChar.ChartSimple;
+            this.iconPictureBox3.IconColor = System.Drawing.Color.Orange;
+            this.iconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox3.IconSize = 84;
+            this.iconPictureBox3.Location = new System.Drawing.Point(116, 16);
+            this.iconPictureBox3.Name = "iconPictureBox3";
+            this.iconPictureBox3.Size = new System.Drawing.Size(93, 84);
+            this.iconPictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.iconPictureBox3.TabIndex = 1;
+            this.iconPictureBox3.TabStop = false;
             // 
             // panel8
             // 
@@ -232,13 +283,14 @@ namespace alhkam.PL
             // 
             // panel5
             // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             this.panel5.Controls.Add(this.label2);
             this.panel5.Controls.Add(this.label3);
             this.panel5.Controls.Add(this.iconPictureBox2);
             this.panel5.Controls.Add(this.panel6);
-            this.panel5.Location = new System.Drawing.Point(376, 30);
+            this.panel5.Location = new System.Drawing.Point(373, 14);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(221, 197);
+            this.panel5.Size = new System.Drawing.Size(221, 178);
             this.panel5.TabIndex = 1;
             // 
             // label2
@@ -261,12 +313,28 @@ namespace alhkam.PL
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label3.Font = new System.Drawing.Font("LBC", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Info;
-            this.label3.Location = new System.Drawing.Point(65, 147);
+            this.label3.Location = new System.Drawing.Point(65, 137);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(75, 30);
             this.label3.TabIndex = 7;
             this.label3.Text = "العملاء";
             this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // iconPictureBox2
+            // 
+            this.iconPictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.iconPictureBox2.Flip = FontAwesome.Sharp.FlipOrientation.Horizontal;
+            this.iconPictureBox2.ForeColor = System.Drawing.Color.Orange;
+            this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.Users;
+            this.iconPictureBox2.IconColor = System.Drawing.Color.Orange;
+            this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox2.IconSize = 84;
+            this.iconPictureBox2.Location = new System.Drawing.Point(116, 16);
+            this.iconPictureBox2.Name = "iconPictureBox2";
+            this.iconPictureBox2.Size = new System.Drawing.Size(93, 84);
+            this.iconPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.iconPictureBox2.TabIndex = 1;
+            this.iconPictureBox2.TabStop = false;
             // 
             // panel6
             // 
@@ -279,13 +347,14 @@ namespace alhkam.PL
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             this.panel3.Controls.Add(this.label1);
             this.panel3.Controls.Add(this.lb_titlepage);
             this.panel3.Controls.Add(this.iconPictureBox1);
             this.panel3.Controls.Add(this.panel4);
-            this.panel3.Location = new System.Drawing.Point(40, 30);
+            this.panel3.Location = new System.Drawing.Point(45, 14);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(221, 197);
+            this.panel3.Size = new System.Drawing.Size(221, 178);
             this.panel3.TabIndex = 0;
             // 
             // label1
@@ -308,11 +377,27 @@ namespace alhkam.PL
             this.lb_titlepage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lb_titlepage.Font = new System.Drawing.Font("LBC", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_titlepage.ForeColor = System.Drawing.SystemColors.Info;
-            this.lb_titlepage.Location = new System.Drawing.Point(57, 147);
+            this.lb_titlepage.Location = new System.Drawing.Point(57, 138);
             this.lb_titlepage.Name = "lb_titlepage";
             this.lb_titlepage.Size = new System.Drawing.Size(83, 30);
             this.lb_titlepage.TabIndex = 7;
             this.lb_titlepage.Text = "الأصناف";
+            // 
+            // iconPictureBox1
+            // 
+            this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.iconPictureBox1.Flip = FontAwesome.Sharp.FlipOrientation.Horizontal;
+            this.iconPictureBox1.ForeColor = System.Drawing.Color.Orange;
+            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.ListAlt;
+            this.iconPictureBox1.IconColor = System.Drawing.Color.Orange;
+            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox1.IconSize = 84;
+            this.iconPictureBox1.Location = new System.Drawing.Point(116, 16);
+            this.iconPictureBox1.Name = "iconPictureBox1";
+            this.iconPictureBox1.Size = new System.Drawing.Size(93, 84);
+            this.iconPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.iconPictureBox1.TabIndex = 1;
+            this.iconPictureBox1.TabStop = false;
             // 
             // panel4
             // 
@@ -334,7 +419,7 @@ namespace alhkam.PL
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1027, 562);
+            this.panel2.Size = new System.Drawing.Size(1027, 506);
             this.panel2.TabIndex = 1;
             // 
             // iconButton11
@@ -350,7 +435,7 @@ namespace alhkam.PL
             this.iconButton11.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton11.IconSize = 35;
             this.iconButton11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton11.Location = new System.Drawing.Point(813, 492);
+            this.iconButton11.Location = new System.Drawing.Point(813, 436);
             this.iconButton11.Name = "iconButton11";
             this.iconButton11.Size = new System.Drawing.Size(148, 48);
             this.iconButton11.TabIndex = 0;
@@ -371,7 +456,7 @@ namespace alhkam.PL
             this.iconButton10.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton10.IconSize = 35;
             this.iconButton10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton10.Location = new System.Drawing.Point(657, 492);
+            this.iconButton10.Location = new System.Drawing.Point(657, 436);
             this.iconButton10.Name = "iconButton10";
             this.iconButton10.Size = new System.Drawing.Size(148, 48);
             this.iconButton10.TabIndex = 0;
@@ -392,7 +477,7 @@ namespace alhkam.PL
             this.iconButton9.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton9.IconSize = 35;
             this.iconButton9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton9.Location = new System.Drawing.Point(501, 492);
+            this.iconButton9.Location = new System.Drawing.Point(501, 436);
             this.iconButton9.Name = "iconButton9";
             this.iconButton9.Size = new System.Drawing.Size(148, 48);
             this.iconButton9.TabIndex = 0;
@@ -413,7 +498,7 @@ namespace alhkam.PL
             this.iconButton8.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton8.IconSize = 35;
             this.iconButton8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton8.Location = new System.Drawing.Point(345, 492);
+            this.iconButton8.Location = new System.Drawing.Point(345, 436);
             this.iconButton8.Name = "iconButton8";
             this.iconButton8.Size = new System.Drawing.Size(148, 48);
             this.iconButton8.TabIndex = 0;
@@ -434,7 +519,7 @@ namespace alhkam.PL
             this.iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton7.IconSize = 35;
             this.iconButton7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton7.Location = new System.Drawing.Point(189, 492);
+            this.iconButton7.Location = new System.Drawing.Point(189, 436);
             this.iconButton7.Name = "iconButton7";
             this.iconButton7.Size = new System.Drawing.Size(148, 48);
             this.iconButton7.TabIndex = 0;
@@ -455,93 +540,13 @@ namespace alhkam.PL
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 35;
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(33, 492);
+            this.iconButton1.Location = new System.Drawing.Point(33, 436);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Size = new System.Drawing.Size(148, 48);
             this.iconButton1.TabIndex = 0;
             this.iconButton1.Text = "إضافة صنف";
             this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.iconButton1.UseVisualStyleBackColor = true;
-            // 
-            // iconPictureBox5
-            // 
-            this.iconPictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.iconPictureBox5.Flip = FontAwesome.Sharp.FlipOrientation.Horizontal;
-            this.iconPictureBox5.ForeColor = System.Drawing.Color.Orange;
-            this.iconPictureBox5.IconChar = FontAwesome.Sharp.IconChar.CartPlus;
-            this.iconPictureBox5.IconColor = System.Drawing.Color.Orange;
-            this.iconPictureBox5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox5.IconSize = 84;
-            this.iconPictureBox5.Location = new System.Drawing.Point(116, 16);
-            this.iconPictureBox5.Name = "iconPictureBox5";
-            this.iconPictureBox5.Size = new System.Drawing.Size(93, 84);
-            this.iconPictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.iconPictureBox5.TabIndex = 1;
-            this.iconPictureBox5.TabStop = false;
-            // 
-            // iconPictureBox4
-            // 
-            this.iconPictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.iconPictureBox4.Flip = FontAwesome.Sharp.FlipOrientation.Horizontal;
-            this.iconPictureBox4.ForeColor = System.Drawing.Color.Orange;
-            this.iconPictureBox4.IconChar = FontAwesome.Sharp.IconChar.File;
-            this.iconPictureBox4.IconColor = System.Drawing.Color.Orange;
-            this.iconPictureBox4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox4.IconSize = 84;
-            this.iconPictureBox4.Location = new System.Drawing.Point(116, 16);
-            this.iconPictureBox4.Name = "iconPictureBox4";
-            this.iconPictureBox4.Size = new System.Drawing.Size(93, 84);
-            this.iconPictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.iconPictureBox4.TabIndex = 1;
-            this.iconPictureBox4.TabStop = false;
-            // 
-            // iconPictureBox3
-            // 
-            this.iconPictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.iconPictureBox3.Flip = FontAwesome.Sharp.FlipOrientation.Horizontal;
-            this.iconPictureBox3.ForeColor = System.Drawing.Color.Orange;
-            this.iconPictureBox3.IconChar = FontAwesome.Sharp.IconChar.ChartSimple;
-            this.iconPictureBox3.IconColor = System.Drawing.Color.Orange;
-            this.iconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox3.IconSize = 84;
-            this.iconPictureBox3.Location = new System.Drawing.Point(116, 16);
-            this.iconPictureBox3.Name = "iconPictureBox3";
-            this.iconPictureBox3.Size = new System.Drawing.Size(93, 84);
-            this.iconPictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.iconPictureBox3.TabIndex = 1;
-            this.iconPictureBox3.TabStop = false;
-            // 
-            // iconPictureBox2
-            // 
-            this.iconPictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.iconPictureBox2.Flip = FontAwesome.Sharp.FlipOrientation.Horizontal;
-            this.iconPictureBox2.ForeColor = System.Drawing.Color.Orange;
-            this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.Users;
-            this.iconPictureBox2.IconColor = System.Drawing.Color.Orange;
-            this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox2.IconSize = 84;
-            this.iconPictureBox2.Location = new System.Drawing.Point(116, 16);
-            this.iconPictureBox2.Name = "iconPictureBox2";
-            this.iconPictureBox2.Size = new System.Drawing.Size(93, 84);
-            this.iconPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.iconPictureBox2.TabIndex = 1;
-            this.iconPictureBox2.TabStop = false;
-            // 
-            // iconPictureBox1
-            // 
-            this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.iconPictureBox1.Flip = FontAwesome.Sharp.FlipOrientation.Horizontal;
-            this.iconPictureBox1.ForeColor = System.Drawing.Color.Orange;
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.ListAlt;
-            this.iconPictureBox1.IconColor = System.Drawing.Color.Orange;
-            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 84;
-            this.iconPictureBox1.Location = new System.Drawing.Point(116, 16);
-            this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(93, 84);
-            this.iconPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.iconPictureBox1.TabIndex = 1;
-            this.iconPictureBox1.TabStop = false;
             // 
             // pn_home
             // 
@@ -550,7 +555,7 @@ namespace alhkam.PL
             this.pn_home.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pn_home.Location = new System.Drawing.Point(0, 0);
             this.pn_home.Name = "pn_home";
-            this.pn_home.Size = new System.Drawing.Size(1027, 562);
+            this.pn_home.Size = new System.Drawing.Size(1027, 506);
             this.pn_home.TabIndex = 2;
             // 
             // FRM_Home
@@ -558,7 +563,7 @@ namespace alhkam.PL
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.ClientSize = new System.Drawing.Size(1027, 562);
+            this.ClientSize = new System.Drawing.Size(1027, 506);
             this.Controls.Add(this.pn_home);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FRM_Home";
@@ -567,20 +572,20 @@ namespace alhkam.PL
             this.panel1.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).EndInit();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.pn_home.ResumeLayout(false);
             this.ResumeLayout(false);
 
