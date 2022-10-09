@@ -31,5 +31,13 @@ namespace alhkam.PL
         {
 
         }
+
+        private void btn_cat_Click(object sender, EventArgs e)
+        {
+            PL.FRM_CAT_ADD frm_add = new FRM_CAT_ADD();
+            frm_add.id = 0;
+            frm_add.btn_add.Text = "اضافة";
+            frm_add.Show();
+        }
     }
 }

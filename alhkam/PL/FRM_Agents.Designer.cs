@@ -1,7 +1,7 @@
 ﻿
 namespace alhkam.PL
 {
-    partial class FRM_Cat
+    partial class FRM_Agents
     {
         /// <summary>
         /// Required designer variable.
@@ -282,7 +282,6 @@ namespace alhkam.PL
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FRM_Cat";
             this.Text = "FRM_Cat";
-            this.Load += new System.EventHandler(this.FRM_Cat_Load);
             this.pn_cat.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCat)).EndInit();
             this.panel2.ResumeLayout(false);

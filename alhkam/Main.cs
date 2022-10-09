@@ -21,6 +21,8 @@ namespace alhkam
 
         MPMContainer db = new MPMContainer();
         public PL.FRM_Cat frm_cat = new PL.FRM_Cat();
+        PL.FRM_Supp frm_supp = new PL.FRM_Supp();
+        PL.FRM_Agents frm_agents = new PL.FRM_Agents();
         PL.FRM_Home frm_home = new PL.FRM_Home();
 
 
@@ -97,7 +99,10 @@ namespace alhkam
 
         private void btn_agents_Click(object sender, EventArgs e)
         {
-            
+            pn_cont.Controls.Clear();
+            lb_titlepage.Text = "العملاء";
+            //frm_cat.dataGridViewCat.DataSource = db.TB_CAT.ToList();
+            pn_cont.Controls.Add(frm_agents.pn_cat);
         }
 
         private void btn_cat_Click(object sender, EventArgs e)
@@ -106,6 +111,14 @@ namespace alhkam
             lb_titlepage.Text = "الاصناف";
             frm_cat.dataGridViewCat.DataSource = db.TB_CAT.ToList();
             pn_cont.Controls.Add(frm_cat.pn_cat);
+        }
+
+        private void btn_supp_Click(object sender, EventArgs e)
+        {
+            pn_cont.Controls.Clear();
+            lb_titlepage.Text = "الموردين";
+            //frm_cat.dataGridViewCat.DataSource = db.TB_CAT.ToList();
+            pn_cont.Controls.Add(frm_supp.pn_cat);
         }
     }
 }

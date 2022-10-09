@@ -40,14 +40,14 @@ namespace alhkam.EPL
             // iconPictureBox1
             // 
             this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.iconPictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.iconPictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
             this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.Flag;
             this.iconPictureBox1.IconColor = System.Drawing.Color.White;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 80;
-            this.iconPictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.iconPictureBox1.IconSize = 57;
+            this.iconPictureBox1.Location = new System.Drawing.Point(386, 0);
             this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(80, 100);
+            this.iconPictureBox1.Size = new System.Drawing.Size(57, 81);
             this.iconPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.iconPictureBox1.TabIndex = 0;
             this.iconPictureBox1.TabStop = false;
@@ -55,10 +55,10 @@ namespace alhkam.EPL
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Orange;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(480, 0);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(20, 100);
+            this.panel1.Size = new System.Drawing.Size(20, 81);
             this.panel1.TabIndex = 1;
             // 
             // txt_caption
@@ -67,9 +67,9 @@ namespace alhkam.EPL
             this.txt_caption.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.txt_caption.Font = new System.Drawing.Font("LBC", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_caption.ForeColor = System.Drawing.Color.White;
-            this.txt_caption.Location = new System.Drawing.Point(86, 9);
+            this.txt_caption.Location = new System.Drawing.Point(20, 1);
             this.txt_caption.Name = "txt_caption";
-            this.txt_caption.Size = new System.Drawing.Size(388, 83);
+            this.txt_caption.Size = new System.Drawing.Size(369, 80);
             this.txt_caption.TabIndex = 8;
             this.txt_caption.Text = "الرسالة";
             this.txt_caption.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -86,10 +86,10 @@ namespace alhkam.EPL
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
-            this.ClientSize = new System.Drawing.Size(500, 100);
-            this.Controls.Add(this.txt_caption);
+            this.ClientSize = new System.Drawing.Size(443, 81);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.iconPictureBox1);
+            this.Controls.Add(this.txt_caption);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Toast";
             this.ShowInTaskbar = false;

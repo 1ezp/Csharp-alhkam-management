@@ -119,6 +119,30 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>MPM.edmx</DependentUpon>
     </Compile>
+    <Compile Include="PL\FRM_SUPP_ADD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_SUPP_ADD.Designer.cs">
+      <DependentUpon>FRM_SUPP_ADD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_Supp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_Supp.Designer.cs">
+      <DependentUpon>FRM_Supp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_AGENTS_ADD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_AGENTS_ADD.Designer.cs">
+      <DependentUpon>FRM_AGENTS_ADD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FRM_Agents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FRM_Agents.Designer.cs">
+      <DependentUpon>FRM_Agents.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\FRM_Cat.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,6 +174,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_SUPP_ADD.resx">
+      <DependentUpon>FRM_SUPP_ADD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_Supp.resx">
+      <DependentUpon>FRM_Supp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_AGENTS_ADD.resx">
+      <DependentUpon>FRM_AGENTS_ADD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FRM_Agents.resx">
+      <DependentUpon>FRM_Agents.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\FRM_Cat.resx">
       <DependentUpon>FRM_Cat.cs</DependentUpon>

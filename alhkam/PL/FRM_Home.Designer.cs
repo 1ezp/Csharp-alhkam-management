@@ -61,7 +61,7 @@ namespace alhkam.PL
             this.iconButton9 = new FontAwesome.Sharp.IconButton();
             this.iconButton8 = new FontAwesome.Sharp.IconButton();
             this.iconButton7 = new FontAwesome.Sharp.IconButton();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.btn_cat = new FontAwesome.Sharp.IconButton();
             this.pn_home = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -99,7 +99,7 @@ namespace alhkam.PL
             this.panel11.Controls.Add(this.label9);
             this.panel11.Controls.Add(this.iconPictureBox5);
             this.panel11.Controls.Add(this.panel12);
-            this.panel11.Location = new System.Drawing.Point(522, 203);
+            this.panel11.Location = new System.Drawing.Point(401, 203);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(221, 183);
             this.panel11.TabIndex = 9;
@@ -162,7 +162,7 @@ namespace alhkam.PL
             this.panel9.Controls.Add(this.label7);
             this.panel9.Controls.Add(this.iconPictureBox4);
             this.panel9.Controls.Add(this.panel10);
-            this.panel9.Location = new System.Drawing.Point(203, 203);
+            this.panel9.Location = new System.Drawing.Point(60, 203);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(221, 183);
             this.panel9.TabIndex = 10;
@@ -288,7 +288,7 @@ namespace alhkam.PL
             this.panel5.Controls.Add(this.label3);
             this.panel5.Controls.Add(this.iconPictureBox2);
             this.panel5.Controls.Add(this.panel6);
-            this.panel5.Location = new System.Drawing.Point(373, 14);
+            this.panel5.Location = new System.Drawing.Point(401, 14);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(221, 178);
             this.panel5.TabIndex = 1;
@@ -352,7 +352,7 @@ namespace alhkam.PL
             this.panel3.Controls.Add(this.lb_titlepage);
             this.panel3.Controls.Add(this.iconPictureBox1);
             this.panel3.Controls.Add(this.panel4);
-            this.panel3.Location = new System.Drawing.Point(45, 14);
+            this.panel3.Location = new System.Drawing.Point(60, 14);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(221, 178);
             this.panel3.TabIndex = 0;
@@ -415,7 +415,7 @@ namespace alhkam.PL
             this.panel2.Controls.Add(this.iconButton9);
             this.panel2.Controls.Add(this.iconButton8);
             this.panel2.Controls.Add(this.iconButton7);
-            this.panel2.Controls.Add(this.iconButton1);
+            this.panel2.Controls.Add(this.btn_cat);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
@@ -435,7 +435,7 @@ namespace alhkam.PL
             this.iconButton11.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton11.IconSize = 35;
             this.iconButton11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton11.Location = new System.Drawing.Point(813, 436);
+            this.iconButton11.Location = new System.Drawing.Point(810, 436);
             this.iconButton11.Name = "iconButton11";
             this.iconButton11.Size = new System.Drawing.Size(148, 48);
             this.iconButton11.TabIndex = 0;
@@ -456,7 +456,7 @@ namespace alhkam.PL
             this.iconButton10.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton10.IconSize = 35;
             this.iconButton10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton10.Location = new System.Drawing.Point(657, 436);
+            this.iconButton10.Location = new System.Drawing.Point(655, 436);
             this.iconButton10.Name = "iconButton10";
             this.iconButton10.Size = new System.Drawing.Size(148, 48);
             this.iconButton10.TabIndex = 0;
@@ -477,7 +477,7 @@ namespace alhkam.PL
             this.iconButton9.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton9.IconSize = 35;
             this.iconButton9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton9.Location = new System.Drawing.Point(501, 436);
+            this.iconButton9.Location = new System.Drawing.Point(500, 436);
             this.iconButton9.Name = "iconButton9";
             this.iconButton9.Size = new System.Drawing.Size(148, 48);
             this.iconButton9.TabIndex = 0;
@@ -519,7 +519,7 @@ namespace alhkam.PL
             this.iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton7.IconSize = 35;
             this.iconButton7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton7.Location = new System.Drawing.Point(189, 436);
+            this.iconButton7.Location = new System.Drawing.Point(190, 436);
             this.iconButton7.Name = "iconButton7";
             this.iconButton7.Size = new System.Drawing.Size(148, 48);
             this.iconButton7.TabIndex = 0;
@@ -527,26 +527,27 @@ namespace alhkam.PL
             this.iconButton7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.iconButton7.UseVisualStyleBackColor = true;
             // 
-            // iconButton1
+            // btn_cat
             // 
-            this.iconButton1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.iconButton1.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.iconButton1.FlatAppearance.BorderSize = 2;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.Font = new System.Drawing.Font("LBC", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton1.ForeColor = System.Drawing.SystemColors.Info;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.FileCirclePlus;
-            this.iconButton1.IconColor = System.Drawing.Color.Orange;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 35;
-            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(33, 436);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(148, 48);
-            this.iconButton1.TabIndex = 0;
-            this.iconButton1.Text = "إضافة صنف";
-            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton1.UseVisualStyleBackColor = true;
+            this.btn_cat.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btn_cat.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btn_cat.FlatAppearance.BorderSize = 2;
+            this.btn_cat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cat.Font = new System.Drawing.Font("LBC", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cat.ForeColor = System.Drawing.SystemColors.Info;
+            this.btn_cat.IconChar = FontAwesome.Sharp.IconChar.FileCirclePlus;
+            this.btn_cat.IconColor = System.Drawing.Color.Orange;
+            this.btn_cat.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn_cat.IconSize = 35;
+            this.btn_cat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_cat.Location = new System.Drawing.Point(35, 436);
+            this.btn_cat.Name = "btn_cat";
+            this.btn_cat.Size = new System.Drawing.Size(148, 48);
+            this.btn_cat.TabIndex = 0;
+            this.btn_cat.Text = "إضافة صنف";
+            this.btn_cat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_cat.UseVisualStyleBackColor = true;
+            this.btn_cat.Click += new System.EventHandler(this.btn_cat_Click);
             // 
             // pn_home
             // 
@@ -625,7 +626,7 @@ namespace alhkam.PL
         private FontAwesome.Sharp.IconButton iconButton9;
         private FontAwesome.Sharp.IconButton iconButton8;
         private FontAwesome.Sharp.IconButton iconButton7;
-        private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton btn_cat;
         public System.Windows.Forms.Panel pn_home;
     }
 }

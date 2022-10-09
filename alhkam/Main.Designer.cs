@@ -45,6 +45,7 @@ namespace alhkam
             this.pn_infonav = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.pn_cont = new System.Windows.Forms.Panel();
+            this.btn_supp = new FontAwesome.Sharp.IconButton();
             this.pn_topbar.SuspendLayout();
             this.pn_navbar.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -53,7 +54,7 @@ namespace alhkam
             // 
             // pn_topbar
             // 
-            this.pn_topbar.BackColor = System.Drawing.Color.Gray;
+            this.pn_topbar.BackColor = System.Drawing.Color.DimGray;
             this.pn_topbar.Controls.Add(this.iconButton1);
             this.pn_topbar.Controls.Add(this.lb_titlepage);
             this.pn_topbar.Controls.Add(this.btn_min);
@@ -151,14 +152,15 @@ namespace alhkam
             // 
             this.flowLayoutPanel1.Controls.Add(this.btn_home);
             this.flowLayoutPanel1.Controls.Add(this.btn_agents);
+            this.flowLayoutPanel1.Controls.Add(this.btn_supp);
             this.flowLayoutPanel1.Controls.Add(this.btn_cat);
             this.flowLayoutPanel1.Controls.Add(this.btn_sale);
             this.flowLayoutPanel1.Controls.Add(this.btn_buy);
             this.flowLayoutPanel1.Controls.Add(this.btn_reports);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 140);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 57);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(210, 422);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(210, 505);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
             // btn_home
@@ -222,7 +224,7 @@ namespace alhkam
             this.btn_cat.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_cat.IconSize = 35;
             this.btn_cat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_cat.Location = new System.Drawing.Point(4, 117);
+            this.btn_cat.Location = new System.Drawing.Point(4, 174);
             this.btn_cat.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_cat.Name = "btn_cat";
             this.btn_cat.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -246,7 +248,7 @@ namespace alhkam
             this.btn_sale.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_sale.IconSize = 35;
             this.btn_sale.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_sale.Location = new System.Drawing.Point(4, 174);
+            this.btn_sale.Location = new System.Drawing.Point(4, 231);
             this.btn_sale.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_sale.Name = "btn_sale";
             this.btn_sale.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -269,7 +271,7 @@ namespace alhkam
             this.btn_buy.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_buy.IconSize = 35;
             this.btn_buy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_buy.Location = new System.Drawing.Point(4, 231);
+            this.btn_buy.Location = new System.Drawing.Point(4, 288);
             this.btn_buy.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_buy.Name = "btn_buy";
             this.btn_buy.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -292,7 +294,7 @@ namespace alhkam
             this.btn_reports.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_reports.IconSize = 35;
             this.btn_reports.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_reports.Location = new System.Drawing.Point(4, 288);
+            this.btn_reports.Location = new System.Drawing.Point(4, 345);
             this.btn_reports.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_reports.Name = "btn_reports";
             this.btn_reports.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -308,7 +310,7 @@ namespace alhkam
             this.pn_infonav.Dock = System.Windows.Forms.DockStyle.Top;
             this.pn_infonav.Location = new System.Drawing.Point(0, 0);
             this.pn_infonav.Name = "pn_infonav";
-            this.pn_infonav.Size = new System.Drawing.Size(210, 140);
+            this.pn_infonav.Size = new System.Drawing.Size(210, 57);
             this.pn_infonav.TabIndex = 0;
             // 
             // label2
@@ -318,7 +320,7 @@ namespace alhkam
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("LBC", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(5, 63);
+            this.label2.Location = new System.Drawing.Point(5, 12);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(202, 31);
             this.label2.TabIndex = 7;
@@ -335,6 +337,30 @@ namespace alhkam
             this.pn_cont.Size = new System.Drawing.Size(1027, 505);
             this.pn_cont.TabIndex = 2;
             this.pn_cont.Paint += new System.Windows.Forms.PaintEventHandler(this.pn_cont_Paint);
+            // 
+            // btn_supp
+            // 
+            this.btn_supp.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_supp.FlatAppearance.BorderSize = 0;
+            this.btn_supp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_supp.Flip = FontAwesome.Sharp.FlipOrientation.Horizontal;
+            this.btn_supp.Font = new System.Drawing.Font("LBC", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_supp.ForeColor = System.Drawing.Color.OldLace;
+            this.btn_supp.IconChar = FontAwesome.Sharp.IconChar.Users;
+            this.btn_supp.IconColor = System.Drawing.Color.Orange;
+            this.btn_supp.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn_supp.IconSize = 35;
+            this.btn_supp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_supp.Location = new System.Drawing.Point(4, 117);
+            this.btn_supp.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btn_supp.Name = "btn_supp";
+            this.btn_supp.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btn_supp.Size = new System.Drawing.Size(207, 51);
+            this.btn_supp.TabIndex = 12;
+            this.btn_supp.Text = "الموردين";
+            this.btn_supp.UseMnemonic = false;
+            this.btn_supp.UseVisualStyleBackColor = true;
+            this.btn_supp.Click += new System.EventHandler(this.btn_supp_Click);
             // 
             // Main
             // 
@@ -379,6 +405,7 @@ namespace alhkam
         private FontAwesome.Sharp.IconButton btn_reports;
         private FontAwesome.Sharp.IconButton btn_buy;
         private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton btn_supp;
     }
 }
 
