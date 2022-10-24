@@ -26,5 +26,6 @@ namespace alhkam
         }
     
         public virtual DbSet<TB_CAT> TB_CAT { get; set; }
+        public virtual DbSet<TB_Supp> TB_Supp { get; set; }
     }
 }

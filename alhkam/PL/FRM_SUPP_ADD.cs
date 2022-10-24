@@ -17,11 +17,11 @@ namespace alhkam.PL
         // init
 
         MPMContainer db = new MPMContainer();
-        TB_CAT tb_cat = new TB_CAT();
+        TB_Supp tb_supp = new TB_Supp();
         BL.methods methods = new BL.methods();
         //Toast toast = new Toast();
         Dialog dialog = new Dialog();
-        PL.FRM_Cat frm_cat = new FRM_Cat();
+        PL.FRM_Supp frm_supp = new FRM_Supp();
 
         public int id;
         public FRM_SUPP_ADD()
@@ -43,28 +43,34 @@ namespace alhkam.PL
             {
                 if (id == 0)
                 {
-                    tb_cat.CAT_Name = edt_name.Text;
-                    db.TB_CAT.Add(tb_cat);
+                    tb_supp.Supp_Name = edt_name.Text;
+                    tb_supp.Supp_Phone = edt_phone.Text;
+                    tb_supp.Supp_Email = edt_mail.Text;
+                    tb_supp.Supp_address = edt_address.Text;
+                    db.TB_Supp.Add(tb_supp);
                     db.SaveChanges();
                     Toast toast = new Toast();
                     toast.txt_caption.Text = "تم الاضافة بنجاح";
                     toast.Show();
                     db = new MPMContainer();
-                    frm_cat.dataGridViewCat.DataSource = db.TB_CAT.ToList();
+                    frm_supp.dataGridViewCat.DataSource = db.TB_Supp.ToList();
                 }
                 else
                 {
                     // edit
 
-                    tb_cat.CAT_Name = edt_name.Text;
-                    tb_cat.ID = id;
-                    db.Entry(tb_cat).State = System.Data.Entity.EntityState.Modified;
+                    tb_supp.Supp_Name = edt_name.Text;
+                    tb_supp.Supp_Phone = edt_phone.Text;
+                    tb_supp.Supp_Email = edt_mail.Text;
+                    tb_supp.Supp_address = edt_address.Text;
+                    tb_supp.ID = id;
+                    db.Entry(tb_supp).State = System.Data.Entity.EntityState.Modified;
                     db.SaveChanges();
                     Toast toast = new Toast();
                     toast.txt_caption.Text = "تم التعديل بنجاح";
                     toast.Show();
                     db = new MPMContainer();
-                    frm_cat.dataGridViewCat.DataSource = db.TB_CAT.ToList();
+                    frm_supp.dataGridViewCat.DataSource = db.TB_Supp.ToList();
                 }
             }
 

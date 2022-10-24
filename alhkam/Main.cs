@@ -117,7 +117,7 @@ namespace alhkam
         {
             pn_cont.Controls.Clear();
             lb_titlepage.Text = "الموردين";
-            //frm_cat.dataGridViewCat.DataSource = db.TB_CAT.ToList();
+            frm_cat.dataGridViewCat.DataSource = db.TB_Supp.ToList();
             pn_cont.Controls.Add(frm_supp.pn_cat);
         }
     }

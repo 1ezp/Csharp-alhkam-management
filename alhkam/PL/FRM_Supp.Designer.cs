@@ -45,12 +45,17 @@ namespace alhkam.PL
             this.btn_delete = new FontAwesome.Sharp.IconButton();
             this.btn_edit = new FontAwesome.Sharp.IconButton();
             this.btn_add = new FontAwesome.Sharp.IconButton();
-            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cATNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tBSuppBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tBCATBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Supp_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Supp_Phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Supp_Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Supp_address = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pn_cat.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCat)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tBSuppBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tBCATBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -91,8 +96,11 @@ namespace alhkam.PL
             this.dataGridViewCat.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewCat.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.iDDataGridViewTextBoxColumn,
-            this.cATNameDataGridViewTextBoxColumn});
-            this.dataGridViewCat.DataSource = this.tBCATBindingSource;
+            this.Supp_Name,
+            this.Supp_Phone,
+            this.Supp_Email,
+            this.Supp_address});
+            this.dataGridViewCat.DataSource = this.tBSuppBindingSource;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.Orange;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Tahoma", 8F);
@@ -251,28 +259,53 @@ namespace alhkam.PL
             this.btn_add.UseVisualStyleBackColor = true;
             this.btn_add.Click += new System.EventHandler(this.btn_add_Click);
             // 
+            // tBSuppBindingSource
+            // 
+            this.tBSuppBindingSource.DataSource = typeof(alhkam.TB_Supp);
+            // 
+            // tBCATBindingSource
+            // 
+            this.tBCATBindingSource.DataSource = typeof(alhkam.TB_CAT);
+            // 
             // iDDataGridViewTextBoxColumn
             // 
             this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
             dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
             this.iDDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle3;
             this.iDDataGridViewTextBoxColumn.FillWeight = 30F;
-            this.iDDataGridViewTextBoxColumn.HeaderText = "رقم الصنف";
+            this.iDDataGridViewTextBoxColumn.HeaderText = "المعرف";
             this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
             this.iDDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // cATNameDataGridViewTextBoxColumn
+            // Supp_Name
             // 
-            this.cATNameDataGridViewTextBoxColumn.DataPropertyName = "CAT_Name";
-            this.cATNameDataGridViewTextBoxColumn.HeaderText = "اسم الصنف";
-            this.cATNameDataGridViewTextBoxColumn.Name = "cATNameDataGridViewTextBoxColumn";
-            this.cATNameDataGridViewTextBoxColumn.ReadOnly = true;
+            this.Supp_Name.DataPropertyName = "Supp_Name";
+            this.Supp_Name.HeaderText = "الاسم";
+            this.Supp_Name.Name = "Supp_Name";
+            this.Supp_Name.ReadOnly = true;
             // 
-            // tBCATBindingSource
+            // Supp_Phone
             // 
-            this.tBCATBindingSource.DataSource = typeof(alhkam.TB_CAT);
+            this.Supp_Phone.DataPropertyName = "Supp_Phone";
+            this.Supp_Phone.HeaderText = "رقم الهاتف";
+            this.Supp_Phone.Name = "Supp_Phone";
+            this.Supp_Phone.ReadOnly = true;
             // 
-            // FRM_Cat
+            // Supp_Email
+            // 
+            this.Supp_Email.DataPropertyName = "Supp_Email";
+            this.Supp_Email.HeaderText = "الايميل";
+            this.Supp_Email.Name = "Supp_Email";
+            this.Supp_Email.ReadOnly = true;
+            // 
+            // Supp_address
+            // 
+            this.Supp_address.DataPropertyName = "Supp_address";
+            this.Supp_address.HeaderText = "العنوان";
+            this.Supp_address.Name = "Supp_address";
+            this.Supp_address.ReadOnly = true;
+            // 
+            // FRM_Supp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -280,12 +313,13 @@ namespace alhkam.PL
             this.ClientSize = new System.Drawing.Size(1027, 506);
             this.Controls.Add(this.pn_cat);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FRM_Cat";
+            this.Name = "FRM_Supp";
             this.Text = "FRM_Cat";
             this.pn_cat.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCat)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tBSuppBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tBCATBindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -303,7 +337,11 @@ namespace alhkam.PL
         private FontAwesome.Sharp.IconButton btn_add;
         private System.Windows.Forms.BindingSource tBCATBindingSource;
         public System.Windows.Forms.DataGridView dataGridViewCat;
+        private System.Windows.Forms.BindingSource tBSuppBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cATNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Supp_Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Supp_Phone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Supp_Email;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Supp_address;
     }
 }

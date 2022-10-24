@@ -6,6 +6,7 @@
     <edmx:Diagrams>
       <Diagram DiagramId="647b0748ac044fa3a8d8b106e5394821" Name="Diagram1" >
         <EntityTypeShape EntityType="MPM.TB_CAT" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="MPM.TB_Supp" Width="1.5" PointX="3.375" PointY="0.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

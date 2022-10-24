@@ -166,6 +166,9 @@
     <Compile Include="TB_CAT.cs">
       <DependentUpon>MPM.tt</DependentUpon>
     </Compile>
+    <Compile Include="TB_Supp.cs">
+      <DependentUpon>MPM.tt</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="EPL\Dialog.resx">
       <DependentUpon>Dialog.cs</DependentUpon>
     </EmbeddedResource>
@@ -235,6 +238,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <None Include="TB_CAT.datasource" />
+    <None Include="TB_Supp.datasource" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
